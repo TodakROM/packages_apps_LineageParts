@@ -70,6 +70,22 @@ public class Utilities {
         return SystemProperties.get("ro.modversion", Build.DISPLAY);
     }
 
+    public static String getBuildDate() {
+        return SystemProperties.get("ro.build.date", Build.DATE);
+    }
+
+    public static String getAndroidVersion() {
+        return SystemProperties.get("ro.crdroid.version", Build.VERSION.RELEASE);
+    }
+
+    public static String getTag(Context context) {
+        String maintainer =  Settings.System.getString(context.getContentResolver(), Settings.System.OTA_MAINTAINER);
+        String tag = "Official";
+        if (maintainer == null || maintainer.isEmpty())
+            tag = "Unofficial";
+        return tag;
+    }
+
     public static String digest(String input) {
         try {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
@@ -85,9 +101,8 @@ public class Utilities {
      * @return Whether or not stats collection is enabled.
      */
     public static boolean isStatsCollectionEnabled(Context context) {
-        LineageSettings.Secure.putInt(context.getContentResolver(),
-                LineageSettings.Secure.STATS_COLLECTION, 0);
-        return false;
+        return LineageSettings.Secure.getInt(context.getContentResolver(),
+                LineageSettings.Secure.STATS_COLLECTION, 1) != 0;
     }
 
     /**
@@ -96,7 +111,8 @@ public class Utilities {
      * @param enabled Boolean that sets collection being enabled.
      */
     public static void setStatsCollectionEnabled(Context context, boolean enabled) {
+        int enable = (enabled) ? 1 : 0;
         LineageSettings.Secure.putInt(context.getContentResolver(),
-                LineageSettings.Secure.STATS_COLLECTION, 0);
+                LineageSettings.Secure.STATS_COLLECTION, enable);
     }
 }
