@@ -103,7 +103,7 @@ public class StatsUploadJobService extends JobService {
 
         @Override
         protected Boolean doInBackground(Void... params) {
-
+/*
             PersistableBundle extras = mJobParams.getExtras();
 
             String deviceId = extras.getString(KEY_UNIQUE_ID);
@@ -138,6 +138,8 @@ public class StatsUploadJobService extends JobService {
                 Log.d(TAG, "job id " + mJobParams.getJobId() + ", has finished with success="
                         + success);
             return success;
+*/
+            return true;
         }
 
         @Override
