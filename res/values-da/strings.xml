@@ -17,7 +17,7 @@
 	limitations under the License.
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
-    <string name="lineageparts_title">FlokoROM Indstillinger</string>
+    <string name="lineageparts_title">TodakROM Indstillinger</string>
     <string name="loading">Indlæser\u2026</string>
     <string name="dlg_ok">OK</string>
     <string name="cancel">Annuller</string>
@@ -387,10 +387,10 @@
     <string name="contributions_info_msg">&lt;b&gt;Bidragsydere i alt:&lt;/b&gt; &lt;xliff:g id="total_contributors"&gt;%1$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Bidrag i alt:&lt;/b&gt; &lt;xliff:g id="total_commits"&gt;%2$s&lt;/xliff:g&gt;&lt;br/&gt;&lt;br/&gt;
                  &lt;b&gt;Seneste opdatering:&lt;/b&gt; &lt;xliff:g id="date"&gt;%3$s&lt;/xliff:g&gt;</string>
-    <string name="anonymous_statistics_title">FlokoROM-statistikker</string>
-    <string name="anonymous_statistics_summary">Hjælp med at gøre FlokoROM bedre, ved at deltage i anonym statistik-rapportering</string>
+    <string name="anonymous_statistics_title">TodakROM-statistikker</string>
+    <string name="anonymous_statistics_summary">Hjælp med at gøre TodakROM bedre, ved at deltage i anonym statistik-rapportering</string>
     <string name="anonymous_statistics_warning_title">Om</string>
-    <string name="anonymous_statistics_warning">Deltagelse i FlokoROM Statistikker vil tillade ikke-personlige data, at blive indsendt til
+    <string name="anonymous_statistics_warning">Deltagelse i TodakROM Statistikker vil tillade ikke-personlige data, at blive indsendt til
         udviklerne af crDroid, for at spore unikke installeringer, på tværs af enheder. Den indsendte information inkluderer en unik 
         som ikke kompromitterer dit privatliv, eller personlige data. Dataene indsendes under hver opstart.\n\nTryk på Forhåndsvis Data, for et eksempel på de data, der indsendes.</string>
     <string name="enable_reporting_title">Aktivér rapportering</string>
